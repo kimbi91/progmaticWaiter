@@ -17,7 +17,7 @@ public class FoodService {
         this.foodRepository = foodRepository;
     }
 
-    public List<FoodService> getAll() {
+    public List<Food> getAll() {
         return new ArrayList<>((Collection) foodRepository.findAll());
     }
 

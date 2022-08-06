@@ -3,6 +3,7 @@ package com.example.progmaticwaiter.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Drink {
@@ -16,17 +17,17 @@ public class Drink {
 
     private double price;
 
-    private int tableNumber;
+    @ManyToOne
+    private Order order;
 
     public Drink() {
     }
 
-    public Drink(Long id, String name, int quantity, double price, int tableNumber) {
-        this.id = id;
+    public Drink(String name, int quantity, double price, Order order) {
         this.name = name;
         this.quantity = quantity;
         this.price = price;
-        this.tableNumber = tableNumber;
+        this.order = order;
     }
 
     public void setId(Long id) {
@@ -61,11 +62,11 @@ public class Drink {
         this.price = price;
     }
 
-    public int getTableNumber() {
-        return tableNumber;
+    public Order getOrder() {
+        return order;
     }
 
-    public void setTableNumber(int tableNumber) {
-        this.tableNumber = tableNumber;
+    public void setOrder(Order order) {
+        this.order = order;
     }
 }

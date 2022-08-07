@@ -5,10 +5,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-//@Entity
+@Entity
 public class Drink {
-   // @Id
-    //@GeneratedValue
+    @Id
+    @GeneratedValue
     private Long id;
 
     private String name;
@@ -17,17 +17,23 @@ public class Drink {
 
     private double price;
 
-   // @ManyToOne
-    private Order order;
+    @ManyToOne
+    private SumOrder sumOrder;
 
     public Drink() {
     }
 
-    public Drink(String name, int quantity, double price, Order order) {
+    public Drink(String name, int quantity, double price) {
         this.name = name;
         this.quantity = quantity;
         this.price = price;
-        this.order = order;
+    }
+
+    public Drink(String name, int quantity, double price, SumOrder sumOrder) {
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
+        this.sumOrder = sumOrder;
     }
 
     public void setId(Long id) {
@@ -62,11 +68,11 @@ public class Drink {
         this.price = price;
     }
 
-    public Order getOrder() {
-        return order;
+    public SumOrder getOrder() {
+        return sumOrder;
     }
 
-    public void setOrder(Order order) {
-        this.order = order;
+    public void setOrder(SumOrder sumOrder) {
+        this.sumOrder = sumOrder;
     }
 }

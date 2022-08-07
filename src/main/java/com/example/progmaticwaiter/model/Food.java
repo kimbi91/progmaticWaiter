@@ -14,18 +14,23 @@ public class Food {
     private int quantity;
 
     private double price;
-
-    /*@ManyToOne
-    private Order order;*/
+    @ManyToOne
+    private SumOrder sumOrder;
 
     public Food() {
     }
 
-    public Food(String name, int quantity, double price, Order order) {
+    public Food(String name, int quantity, double price) {
         this.name = name;
         this.quantity = quantity;
         this.price = price;
-      //  this.order = order;
+    }
+
+    public Food(String name, int quantity, double price, SumOrder sumOrder) {
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
+        this.sumOrder = sumOrder;
     }
 
     public void setId(Long id) {
@@ -60,11 +65,11 @@ public class Food {
         this.price = price;
     }
 
-    /*public Order getOrder() {
-        return order;
-    }*/
+    public SumOrder getOrder() {
+        return sumOrder;
+    }
 
-    /*public void setOrder(Order order) {
-        this.order = order;
-    }*/
+    public void setOrder(SumOrder sumOrder) {
+        this.sumOrder = sumOrder;
+    }
 }

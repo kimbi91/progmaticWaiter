@@ -11,18 +11,18 @@ import java.util.List;
 @Service
 public class DrinkService {
 
-    //private DrinkRepository drinkRepository;
+    private DrinkRepository drinkRepository;
 
-   /* public DrinkService(DrinkRepository drinkRepository) {
+    public DrinkService(DrinkRepository drinkRepository) {
         this.drinkRepository = drinkRepository;
     }
-*/
+
     public List<Drink> getAll() {
-        return new ArrayList<>();//(Collection) drinkRepository.findAll());
+        return new ArrayList<>((Collection) drinkRepository.findAll());
     }
 
     public Drink saveDrink(Drink drink) {
-        //drinkRepository.save(drink);
+        drinkRepository.save(drink);
 
         return drink;
     }

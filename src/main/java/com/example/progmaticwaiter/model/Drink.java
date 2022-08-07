@@ -5,10 +5,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-@Entity
+//@Entity
 public class Drink {
-    @Id
-    @GeneratedValue
+   // @Id
+    //@GeneratedValue
     private Long id;
 
     private String name;
@@ -17,7 +17,7 @@ public class Drink {
 
     private double price;
 
-    @ManyToOne
+   // @ManyToOne
     private Order order;
 
     public Drink() {

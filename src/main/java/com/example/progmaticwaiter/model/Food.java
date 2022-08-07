@@ -1,10 +1,7 @@
 package com.example.progmaticwaiter.model;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Entity
 public class Food {
@@ -18,8 +15,8 @@ public class Food {
 
     private double price;
 
-    @ManyToOne
-    private Order order;
+    /*@ManyToOne
+    private Order order;*/
 
     public Food() {
     }
@@ -28,7 +25,7 @@ public class Food {
         this.name = name;
         this.quantity = quantity;
         this.price = price;
-        this.order = order;
+      //  this.order = order;
     }
 
     public void setId(Long id) {
@@ -63,11 +60,11 @@ public class Food {
         this.price = price;
     }
 
-    public Order getOrder() {
+    /*public Order getOrder() {
         return order;
-    }
+    }*/
 
-    public void setOrder(Order order) {
+    /*public void setOrder(Order order) {
         this.order = order;
-    }
+    }*/
 }

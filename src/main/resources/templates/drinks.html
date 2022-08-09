@@ -13,14 +13,14 @@
             <th>Name</th>
             <th>Quantity</th>
             <th>Price</th>
-            <th>Table</th>
+            <th>Order Id</th>
         </tr>
         <tr data-th-each="drink : ${drinks}">
             <td data-th-text="${drink.id}"></td>
             <td data-th-text="${drink.name}"></td>
             <td data-th-text="${drink.quantity}"></td>
             <td data-th-text="${drink.price}"></td>
-        <!--    <td data-th-text="${drink.sumOrder}"></td>  -->
+            <td data-th-text="${drink.sumOrder}"></td>
         </tr>
     </table>
 

@@ -45,10 +45,16 @@ public class TestDataLoader {
 
         SumOrder order = new SumOrder(foods, drinks);
 
+        f1.setSumOrder(order);
+        f2.setSumOrder(order);
+        d1.setSumOrder(order);
+        d2.setSumOrder(order);
+
+        sumOrderRepository.save(order);
+
         foodRepository.saveAll(Arrays.asList(f1, f2));
 
         drinkRepository.saveAll(Arrays.asList(d1, d2));
 
-        sumOrderRepository.save(order);
     }
 }

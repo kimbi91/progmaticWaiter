@@ -68,11 +68,11 @@ public class Drink {
         this.price = price;
     }
 
-    public SumOrder getOrder() {
+    public SumOrder getSumOrder() {
         return sumOrder;
     }
 
-    public void setOrder(SumOrder sumOrder) {
+    public void setSumOrder(SumOrder sumOrder) {
         this.sumOrder = sumOrder;
     }
 }

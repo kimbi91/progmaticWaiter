@@ -24,7 +24,6 @@ public class SumOrderController {
 
     @GetMapping("/orders")
     public String getOrders(Model model) {
-        testDataLoader.loadData();
         List<SumOrder> sumOrders = sumOrderService.getAll();
         model.addAttribute("orders", sumOrders);
 
@@ -43,5 +42,12 @@ public class SumOrderController {
         sumOrderService.saveOrder(sumOrder);
 
         return "redirect:/orders";
+    }
+
+    @GetMapping("/load")
+    public String loadTestData() {
+        testDataLoader.loadData();
+
+        return "orders";
     }
 }

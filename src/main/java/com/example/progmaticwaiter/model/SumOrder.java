@@ -67,4 +67,13 @@ public class SumOrder {
     public void setDrinks(List<Drink> drinks) {
         this.drinks = drinks;
     }
+
+    @Override
+    public String toString() {
+        return "SumOrder{" +
+                "id=" + id +
+                ", foods=" + foods +
+                ", drinks=" + drinks +
+                '}';
+    }
 }

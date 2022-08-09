@@ -48,6 +48,6 @@ public class SumOrderController {
     public String loadTestData() {
         testDataLoader.loadData();
 
-        return "orders";
+        return "redirect:/orders";
     }
 }

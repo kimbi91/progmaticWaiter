@@ -72,4 +72,15 @@ public class Food {
     public void setSumOrder(SumOrder sumOrder) {
         this.sumOrder = sumOrder;
     }
+
+    @Override
+    public String toString() {
+        return "Food{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", quantity=" + quantity +
+                ", price=" + price +
+                ", sumOrder=" + sumOrder +
+                '}';
+    }
 }

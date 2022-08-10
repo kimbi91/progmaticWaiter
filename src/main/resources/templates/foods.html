@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Foods</title>
 
     <link data-th-href="@{/all.css}" rel="stylesheet" type="text/css">
     <link
             href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
             rel="stylesheet">
     <link data-th-href="@{/sb-admin-2.css}" rel="stylesheet">
+    <link data-th-href="@{/dataTables.bootstrap4.css}" rel="stylesheet">
 
 </head>
 <body id="page-top">
@@ -52,13 +53,13 @@
             Summaries
         </div>
 
-        <li class="nav-item">
+        <li class="nav-item  active">
             <a class="nav-link" data-th-href="@{/orders}">
                 <i class="fas fa-fw fa-table"></i>
                 <span>Orders</span></a>
         </li>
 
-        <li class="nav-item  active">
+        <li class="nav-item">
             <a class="nav-link" data-th-href="@{/foods}">
                 <i class="fas fa-fw fa-table"></i>
                 <span>Foods</span></a>
@@ -133,6 +134,9 @@
 <script data-th-src="@{/Chart.js}"></script>
 <script data-th-src="@{/chart-area-demo.js}"></script>
 <script data-th-src="@{/chart-pie-demo.js}"></script>
+<script data-th-src="@{/jquery.dataTables.js}"></script>
+<script data-th-src="@{/dataTables.bootstrap4.js}"></script>
+<script data-th-src="@{/datatables-demo.js}"></script>
 
 </body>
 </html>

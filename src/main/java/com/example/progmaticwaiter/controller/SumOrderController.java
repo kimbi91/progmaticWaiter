@@ -15,11 +15,9 @@ public class SumOrderController {
 
     private SumOrderService sumOrderService;
 
-    private TestDataLoader testDataLoader;
 
     public SumOrderController(SumOrderService sumOrderService, TestDataLoader testDataLoader) {
         this.sumOrderService = sumOrderService;
-        this.testDataLoader = testDataLoader;
     }
 
     @GetMapping("/orders")
@@ -44,10 +42,4 @@ public class SumOrderController {
         return "redirect:/orders";
     }
 
-    @GetMapping("/load")
-    public String loadTestData() {
-        testDataLoader.loadData();
-
-        return "redirect:/orders";
-    }
 }

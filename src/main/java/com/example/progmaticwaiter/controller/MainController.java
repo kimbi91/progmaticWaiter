@@ -17,7 +17,7 @@ public class MainController {
     public String loadTestData() {
         testDataLoader.loadData();
 
-        return "redirect:/orders";
+        return "redirect:/home";
     }
 
     @GetMapping("/home")

@@ -1,11 +1,11 @@
-package com.example.progmaticwaiter.service;
+package com.example.progmaticwaiter.services;
 
-import com.example.progmaticwaiter.model.Drink;
-import com.example.progmaticwaiter.model.Food;
-import com.example.progmaticwaiter.model.SumOrder;
-import com.example.progmaticwaiter.repository.DrinkRepository;
-import com.example.progmaticwaiter.repository.FoodRepository;
-import com.example.progmaticwaiter.repository.SumOrderRepository;
+import com.example.progmaticwaiter.models.Drink;
+import com.example.progmaticwaiter.models.Food;
+import com.example.progmaticwaiter.models.SumOrder;
+import com.example.progmaticwaiter.repositories.DrinkRepository;
+import com.example.progmaticwaiter.repositories.FoodRepository;
+import com.example.progmaticwaiter.repositories.SumOrderRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -40,14 +40,14 @@ public class TestDataLoader {
         Food f9 = new Food("Oldalas rizzsel", 1, 17.1);
 
 
-        Drink d1 = new Drink("Coca Cola", 5, 19.99);
-        Drink d2 = new Drink("Fanta", 1, 15.99);
-        Drink d3 = new Drink("Sprite", 1, 9.99);
+        Drink d1 = new Drink("Coca Cola", 2, 19.99);
+        Drink d2 = new Drink("Fanta", 3, 15.99);
+        Drink d3 = new Drink("Sprite", 2, 9.99);
         Drink d4 = new Drink("Víz", 1, 5.99);
-        Drink d5 = new Drink("Coca Cola", 1, 19.99);
-        Drink d6 = new Drink("Fanta", 1, 15.99);
+        Drink d5 = new Drink("Coca Cola", 4, 19.99);
+        Drink d6 = new Drink("Fanta", 2, 15.99);
         Drink d7 = new Drink("Fanta", 1, 15.99);
-        Drink d8 = new Drink("Coca Cola", 1, 19.99);
+        Drink d8 = new Drink("Coca Cola", 3, 19.99);
         Drink d9 = new Drink("Sprite", 1, 9.99);
 
         List<Food> foods = new ArrayList<>();

@@ -1,12 +1,10 @@
-package com.example.progmaticwaiter.model;
+package com.example.progmaticwaiter.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+
+import javax.persistence.*;
 
 @Entity
-public class Drink {
+public class Food {
     @Id
     @GeneratedValue
     private Long id;
@@ -16,20 +14,19 @@ public class Drink {
     private int quantity;
 
     private double price;
-
     @ManyToOne
     private SumOrder sumOrder;
 
-    public Drink() {
+    public Food() {
     }
 
-    public Drink(String name, int quantity, double price) {
+    public Food(String name, int quantity, double price) {
         this.name = name;
         this.quantity = quantity;
         this.price = price;
     }
 
-    public Drink(String name, int quantity, double price, SumOrder sumOrder) {
+    public Food(String name, int quantity, double price, SumOrder sumOrder) {
         this.name = name;
         this.quantity = quantity;
         this.price = price;
@@ -78,7 +75,7 @@ public class Drink {
 
     @Override
     public String toString() {
-        return "Drink{" +
+        return "Food{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", quantity=" + quantity +

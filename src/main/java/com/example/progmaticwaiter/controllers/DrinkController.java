@@ -1,7 +1,7 @@
-package com.example.progmaticwaiter.controller;
+package com.example.progmaticwaiter.controllers;
 
-import com.example.progmaticwaiter.model.Drink;
-import com.example.progmaticwaiter.service.DrinkService;
+import com.example.progmaticwaiter.models.Drink;
+import com.example.progmaticwaiter.services.DrinkService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

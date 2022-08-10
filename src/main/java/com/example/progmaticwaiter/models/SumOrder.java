@@ -1,4 +1,4 @@
-package com.example.progmaticwaiter.model;
+package com.example.progmaticwaiter.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

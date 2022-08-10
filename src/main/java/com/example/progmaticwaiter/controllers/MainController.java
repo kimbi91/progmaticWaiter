@@ -1,6 +1,6 @@
-package com.example.progmaticwaiter.controller;
+package com.example.progmaticwaiter.controllers;
 
-import com.example.progmaticwaiter.service.TestDataLoader;
+import com.example.progmaticwaiter.services.TestDataLoader;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 

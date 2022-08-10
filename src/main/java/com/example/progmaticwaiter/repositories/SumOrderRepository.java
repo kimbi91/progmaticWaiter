@@ -1,6 +1,6 @@
-package com.example.progmaticwaiter.repository;
+package com.example.progmaticwaiter.repositories;
 
-import com.example.progmaticwaiter.model.SumOrder;
+import com.example.progmaticwaiter.models.SumOrder;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

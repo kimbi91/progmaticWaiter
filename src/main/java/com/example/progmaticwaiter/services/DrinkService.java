@@ -1,7 +1,7 @@
-package com.example.progmaticwaiter.service;
+package com.example.progmaticwaiter.services;
 
-import com.example.progmaticwaiter.model.Drink;
-import com.example.progmaticwaiter.repository.DrinkRepository;
+import com.example.progmaticwaiter.models.Drink;
+import com.example.progmaticwaiter.repositories.DrinkRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

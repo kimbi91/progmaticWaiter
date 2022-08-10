@@ -1,6 +1,6 @@
-package com.example.progmaticwaiter.repository;
+package com.example.progmaticwaiter.repositories;
 
-import com.example.progmaticwaiter.model.Food;
+import com.example.progmaticwaiter.models.Food;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

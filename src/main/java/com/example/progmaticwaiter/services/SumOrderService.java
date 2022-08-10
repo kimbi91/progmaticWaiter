@@ -1,7 +1,7 @@
-package com.example.progmaticwaiter.service;
+package com.example.progmaticwaiter.services;
 
-import com.example.progmaticwaiter.model.SumOrder;
-import com.example.progmaticwaiter.repository.SumOrderRepository;
+import com.example.progmaticwaiter.models.SumOrder;
+import com.example.progmaticwaiter.repositories.SumOrderRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

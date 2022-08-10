@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+
+  <link data-th-href="@{/all.css}" rel="stylesheet" type="text/css">
+  <link
+          href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+  <link data-th-href="@{/sb-admin-2.css}" rel="stylesheet">
+
+</head>
+<body id="page-top">
+
+<div id="wrapper">
+
+  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+      <div class="sidebar-brand-icon rotate-n-15">
+        <i class="fas fa-laugh-wink"></i>
+      </div>
+      <div class="sidebar-brand-text mx-3">Progmatic Waiter App</div>
+    </a>
+
+    <hr class="sidebar-divider my-0">
+
+    <div class="sidebar-heading">
+      Waiter menu
+    </div>
+
+    <li class="nav-item">
+      <a class="nav-link" data-th-href="@{/home}">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Home</span></a>
+    </li>
+
+    <li class="nav-item  active">
+      <a class="nav-link" href="#">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Active orders</span></a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-th-href="@{/orders/neworder}">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>New order</span></a>
+    </li>
+
+    <div class="sidebar-heading">
+      Summaries
+    </div>
+
+    <li class="nav-item">
+      <a class="nav-link" data-th-href="@{/orders}">
+        <i class="fas fa-fw fa-table"></i>
+        <span>Orders</span></a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-th-href="@{/foods}">
+        <i class="fas fa-fw fa-table"></i>
+        <span>Foods</span></a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-th-href="@{/drinks}">
+        <i class="fas fa-fw fa-table"></i>
+        <span>Drinks</span></a>
+    </li>
+
+
+  </ul>
+
+  <div id="content-wrapper" class="d-flex flex-column">
+
+
+    <div id="content">
+
+
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Lorem ipsum dolor sit amet.</h6>
+            </div>
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut cum deserunt dignissimos
+                dolore doloribus error ex ipsam ipsum iste iure labore modi nam natus nobis, non, odit
+                praesentium provident quas qui rerum saepe sed, similique sint tempora tempore temporibus
+                unde veritatis voluptatem voluptatum. A inventore iste maiores molestias, repellat suscipit!
+                Aliquid assumenda consequuntur cumque excepturi illo possimus repellat tempore unde veniam
+                vitae. A ab accusamus aut corporis culpa cum cupiditate delectus dicta doloremque eum
+                eveniet excepturi explicabo, facere fuga id illo in ipsa ipsum itaque laboriosam magnam
+                magni nesciunt nostrum odio perspiciatis quam quasi quidem quo reiciendis rem, saepe
+                sapiente sequi similique suscipit temporibus veniam voluptatibus? Accusantium architecto
+                corporis deserunt dicta explicabo fugit illum incidunt, ipsa laboriosam maxime non pariatur
+                porro possimus, quibusdam, vero! Deserunt ipsa laboriosam reprehenderit tempora ut?
+                Accusamus illo ipsum iure magnam non quaerat quia reiciendis vitae voluptatibus voluptatum?
+                Adipisci consectetur consequuntur enim magnam nam sint tenetur voluptatem. Autem fugiat,
+                ipsam quam quas quisquam quo! Dolores exercitationem hic magni nemo reprehenderit saepe
+                veritatis? Animi autem blanditiis deserunt dolores ex excepturi fugiat incidunt ipsum magni
+                optio quod, ratione soluta totam unde ut. Amet beatae cum delectus dicta dolorum enim eum
+                illum ipsam ipsum libero officiis placeat quod tempora vitae, voluptas voluptate voluptatum?
+                Ab accusantium aliquid assumenda at autem commodi consequatur cupiditate ducimus ea earum
+                eius, est eum exercitationem fuga illum in iste labore libero magnam magni molestiae
+                mollitia nam nisi odio optio quam quasi quo rem repudiandae saepe sint sunt suscipit velit.
+                Dicta distinctio ex, nisi omnis voluptates voluptatibus! Harum ipsa laudantium magnam
+                quam quis quod, tenetur.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script data-th-src="@{/jquery.js}"></script>
+<script data-th-src="@{/jquery.easing.js}"></script>
+<script data-th-src="@{/bootstrap.bundle.js}"></script>
+<script data-th-src="@{/Chart.js}"></script>
+<script data-th-src="@{/chart-area-demo.js}"></script>
+<script data-th-src="@{/chart-pie-demo.js}"></script>
+
+</body>
+</html>

@@ -1,6 +1,7 @@
 package com.example.progmaticwaiter.services;
 
 import com.example.progmaticwaiter.models.Food;
+import com.example.progmaticwaiter.models.SumOrder;
 import com.example.progmaticwaiter.repositories.FoodRepository;
 import org.springframework.stereotype.Service;
 
@@ -25,5 +26,9 @@ public class FoodService {
         foodRepository.save(food);
 
         return food;
+    }
+
+    public List<Food> getFoodsByOrderId(Long id) {
+        return foodRepository.getFoodsByOrderId(id);
     }
 }

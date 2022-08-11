@@ -1,5 +1,6 @@
 package com.example.progmaticwaiter.controllers;
 
+import com.example.progmaticwaiter.services.SumOrderService;
 import com.example.progmaticwaiter.services.TestDataLoader;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController {
 
     private TestDataLoader testDataLoader;
+
 
     public MainController(TestDataLoader testDataLoader) {
         this.testDataLoader = testDataLoader;
@@ -20,8 +22,9 @@ public class MainController {
         return "redirect:/home";
     }
 
-    @GetMapping("/home")
+    @GetMapping(value = {"/","/home"})
     public String getHome() {
         return "index";
     }
+
 }

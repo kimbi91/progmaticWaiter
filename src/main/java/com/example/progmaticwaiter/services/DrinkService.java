@@ -1,7 +1,6 @@
 package com.example.progmaticwaiter.services;
 
 import com.example.progmaticwaiter.models.Drink;
-import com.example.progmaticwaiter.models.Food;
 import com.example.progmaticwaiter.repositories.DrinkRepository;
 import org.springframework.stereotype.Service;
 
@@ -31,4 +30,5 @@ public class DrinkService {
     public List<Drink> getDrinksByOrderId(Long id) {
         return drinkRepository.getDrinksByOrderId(id);
     }
+
 }

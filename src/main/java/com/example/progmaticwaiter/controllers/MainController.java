@@ -1,6 +1,5 @@
 package com.example.progmaticwaiter.controllers;
 
-import com.example.progmaticwaiter.services.SumOrderService;
 import com.example.progmaticwaiter.services.TestDataLoader;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

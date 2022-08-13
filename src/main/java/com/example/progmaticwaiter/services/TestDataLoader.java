@@ -3,27 +3,18 @@ package com.example.progmaticwaiter.services;
 import com.example.progmaticwaiter.models.Drink;
 import com.example.progmaticwaiter.models.Food;
 import com.example.progmaticwaiter.models.SumOrder;
-import com.example.progmaticwaiter.repositories.DrinkRepository;
-import com.example.progmaticwaiter.repositories.FoodRepository;
 import com.example.progmaticwaiter.repositories.SumOrderRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Service
 public class TestDataLoader {
 
-    private DrinkRepository drinkRepository;
-
-    private FoodRepository foodRepository;
-
     private SumOrderRepository sumOrderRepository;
 
-    public TestDataLoader(DrinkRepository drinkRepository, FoodRepository foodRepository, SumOrderRepository sumOrderRepository) {
-        this.drinkRepository = drinkRepository;
-        this.foodRepository = foodRepository;
+    public TestDataLoader(SumOrderRepository sumOrderRepository) {
         this.sumOrderRepository = sumOrderRepository;
     }
 
@@ -110,14 +101,6 @@ public class TestDataLoader {
         sumOrderRepository.save(order);
         sumOrderRepository.save(order2);
         sumOrderRepository.save(order3);
-
-        foodRepository.saveAll(Arrays.asList(f1, f2, f3));
-        foodRepository.saveAll(Arrays.asList(f4, f5, f6));
-        foodRepository.saveAll(Arrays.asList(f7, f8, f9));
-
-        drinkRepository.saveAll(Arrays.asList(d1, d2, d3));
-        drinkRepository.saveAll(Arrays.asList(d4, d5, d6));
-        drinkRepository.saveAll(Arrays.asList(d7, d8, d9));
 
     }
 }

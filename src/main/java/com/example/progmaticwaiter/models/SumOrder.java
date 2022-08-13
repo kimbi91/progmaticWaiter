@@ -1,9 +1,6 @@
 package com.example.progmaticwaiter.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,10 +10,10 @@ public class SumOrder {
     @GeneratedValue
     private Long id;
 
-    @OneToMany(mappedBy = "id")
+    @OneToMany(mappedBy = "sumOrder", cascade = CascadeType.ALL)
     private List<Food> foods;
 
-    @OneToMany(mappedBy = "id")
+    @OneToMany(mappedBy = "sumOrder", cascade = CascadeType.ALL)
     private List<Drink> drinks;
 
     public SumOrder() {

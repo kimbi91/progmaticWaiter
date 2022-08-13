@@ -27,8 +27,5 @@ public class DrinkService {
         return drink;
     }
 
-    public List<Drink> getDrinksByOrderId(Long id) {
-        return drinkRepository.getDrinksByOrderId(id);
-    }
 
 }

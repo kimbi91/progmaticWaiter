@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+</head>
+<body>
+
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+  <a data-th-fragment="menuBranding">
+    <div class="sidebar-brand-icon rotate-n-15">
+      <i class="fas fa-laugh-wink"></i>
+    </div>
+    <div class="sidebar-brand-text mx-3">Progmatic Waiter App</div>
+  </a>
+
+  <hr class="sidebar-divider my-0">
+
+  <div class="sidebar-heading">
+    Waiter menu
+  </div>
+
+  <li data-th-fragment="homeItem">
+    <a class="nav-link" data-th-href="@{/home}">
+      <i class="fas fa-fw fa-folder"></i>
+      <span>Home</span></a>
+  </li>
+
+  <li data-th-fragment="activeItem">
+    <a class="nav-link" href="#">
+      <i class="fas fa-fw fa-folder"></i>
+      <span>Active orders</span></a>
+  </li>
+
+  <li data-th-fragment="orderItem">
+    <a class="nav-link" data-th-href="@{/orders/new}">
+      <i class="fas fa-fw fa-cog"></i>
+      <span>New order</span></a>
+  </li>
+
+  <div class="sidebar-heading">
+    Summaries
+  </div>
+
+  <li data-th-fragment="ordersItem">
+    <a class="nav-link" data-th-href="@{/orders}">
+      <i class="fas fa-fw fa-table"></i>
+      <span>Orders</span></a>
+  </li>
+
+  <li data-th-fragment="foodsItem">
+    <a class="nav-link" data-th-href="@{/foods}">
+      <i class="fas fa-fw fa-table"></i>
+      <span>Foods</span></a>
+  </li>
+
+  <li data-th-fragment="drinksItem">
+    <a class="nav-link" data-th-href="@{/drinks}">
+      <i class="fas fa-fw fa-table"></i>
+      <span>Drinks</span></a>
+  </li>
+
+
+</ul>
+
+</body>
+</html>
